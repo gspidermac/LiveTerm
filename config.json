@@ -1,39 +1,41 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/gspidermac/gspidermac/master/README.md",
+  "title": "gspidermac",
+  "name": "Pedro Cano",
+  "ascii": "gspidermac",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "gspidermac",
+    "linkedin": "PedroCanoDiaz"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "email": "gspidermac@gmail.com",
+  "ps1_hostname": "gspidermac",
+  "ps1_username": "root",
+  "repo": "https://github.com/gspidermac",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
+  "music": "https://liftoffband.ch",
+  "photography": "https://www.flickr.com/photos/gspidermac/",
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
+      "background": "#E5E9F0",
+      "foreground": "#2E3440",
+      "yellow": "#EBCB8B",
+      "green": "#A3BE8C",
+      "gray": "#D8DEE9",
+      "blue": "#5E81AC",
+      "red": "#BF616A",
+      "cyan": "#00B1BE",
+      "orange": "#D08770"
     },
     "dark": {
       "background": "#2E3440",
       "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
+      "yellow": "#EBCB8B",
       "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "gray": "#D8DEE9",
+      "blue": "#5E81AC",
+      "red": "#BF616A",
+      "cyan": "#88C0D0",
+      "orange": "#D08770"
     }
   }
 }

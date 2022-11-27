@@ -32,24 +32,15 @@ export const repo = async (args: string[]): Promise<string> => {
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
 Welcome to my website!
-More about me:
+More commands with info about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'man' - gspidermac Manual.
+'linkedin' - professional profile.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
-  return 'Opening resume...';
-};
-
-// Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
+  //window.open(`${config.resume_url}`);
+  return 'try with linkedin command';
 };
 
 // Contact
@@ -60,13 +51,11 @@ export const email = async (args: string[]): Promise<string> => {
 
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
-
   return 'Opening github...';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
-
   return 'Opening linkedin...';
 };
 
@@ -109,8 +98,7 @@ directories`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `cd: no such file or directory: ${args.join(' ')}`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -134,21 +122,55 @@ export const emacs = async (args?: string[]): Promise<string> => {
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+  window.open('https://gfycat.com/falsebravegnat', '_blank');
   return `Permission denied: with little power comes... no responsibility? `;
+};
+
+export const man = async (args?: string[]): Promise<string> => {
+  window.open('https://gspidermac.github.io', '_blank');
+  return `gspidermac Manual`;
 };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+                                                                                       
+                           MMMMMM      MMMMMM     MMMMMM       MMMMMM                  
+                          MMMMMMM      MMMMMM     MMMMMM      MMMMMMM                  
+                         MMMMMMMMM     MMMMMM     MMMMMM     MMMMMMMMM                 
+                        MMMMMMMMMMM    MMMMMM     MMMMMM     MMMMMMMMMM                
+                        MMMMMMMMMMM    MMMMMM     MMMMMM    MMMMMMMMMMM                
+                       MMMMMM MMMMMM                       MMMMMM MMMMMM               
+                      MMMMMM   MMMMMM                     MMMMMM   MMMMMM              
+                      MMMMM    MMMMMM                     MMMMMM    MMMMM              
+                     MMMMMM     MMMMMM                   MMMMMM     MMMMMM             
+                    MMMMMM       MMMMMM                 MMMMMM       MMMMMM            
+                   MMMMMM         MMMMMM                MMMMM         MMMMMM           
+                   MMMMMM         MMMMMM               MMMMMM         MMMMMM           
+                  MMMMMM           MMMMMM             MMMMMM           MMMMMM          
+                 MMMMMM             MMMMM             MMMMM             MMMMMM         
+                 MMMMMM             MMMMMM           MMMMMM             MMMMMM         
+                MMMMMM               MMMMMM         MMMMMM               MMMMMM        
+               MMMMMM                 MMMMMM       MMMMMM                 MMMMMM       
+               MMMMMM                 MMMMMM       MMMMMM                  MMMMM       
+              MMMMMM                   MMMMMM     MMMMMM                   MMMMMM      
+             MMMMMM                     MMMMMM   MMMMMM                     MMMMMM     
+             MMMMMM                      MMMMMM  MMMMMM                      MMMMMM    
+            MMMMMM                       MMMMMM MMMMMM                       MMMMMM    
+           MMMMMM                         MMMMMMMMMMM                         MMMMMM   
+          MMMMMM                           MMMMMMMMM                           MMMMMM  
+          MMMMMM                           MMMMMMMMM                           MMMMMM  
+         MMMMMM                             MMMMMMM                             MMMMMM 
+                                                                                       
+                                  MM      MM                                           
+                                          MM                                           
+          MMMMMM  MMMMM  MMMMMM   MM  MMMMMM   MMMM   M MM MMMMMM MMM   MMMMMM   MMMM  
+         MM   MM MM      MM   MM  MM MM   MM MM   MM  MM   MM   MM  MM      MM  MM  MM 
+         MM   MM   MMMM  MM   MM  MM MM   MM MMMMMMM  MM   MM   MM  MM  MMMMMM MM      
+         MM   MM MM   MM MM   MM  MM MM   MM MM   MM  MM   MM   MM  MM MM   MM  MM  MM 
+          MMM MM  MMMMM  MMMMMM   MM  MMMMMM   MMMM   MM   MM   MM  MM  MMMMMM   MMMM  
+         MM   MM         MM                                                            
+           MMM           MM                                                            
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.

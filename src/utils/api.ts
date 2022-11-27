@@ -8,10 +8,10 @@ export const getProjects = async () => {
   return data;
 };
 
-export const getReadme = async () => {
-  const { data } = await axios.get(config.readmeUrl);
-  return data;
-};
+// export const getReadme = async () => {
+//   const { data } = await axios.get(config.readmeUrl);
+//   return data;
+// };
 
 export const getWeather = async (city: string) => {
   try {
@@ -27,4 +27,13 @@ export const getQuote = async () => {
   return {
     quote: `“${data.content}” — ${data.author}`,
   };
+};
+
+export const getCheat = async (cmd: string) => {
+  try {
+    const { data } = await axios.get(`https://cheat.sh/${cmd}`);
+    return data;
+  } catch (error) {
+    return error;
+  }
 };
